@@ -1,0 +1,294 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Homemade+Apple&family=Mrs+Sheppards&family=Open+Sans:wght@800&family=Poppins:wght@300&display=swap');
+
+* {
+     margin: 0px;
+     padding: 0px;
+
+}
+
+body {
+     background-color: #f9ebf2; 
+}
+
+header {
+     display: flex;
+     justify-content: space-around;
+     background-color:#3c363b;
+     border-bottom: 5px solid #fcd7da; 
+     position: fixed;
+     width: 100%;
+}
+
+h1 {
+     color: #fcd7da;
+     font-size: 55px;
+     font-family: 'Poppins', sans-serif;
+}
+
+/* JAVASCRIPT TEXT */
+#text {
+     color: #3c363b;
+     font-size: 40px; 
+     font-weight: 700;
+     text-align: center; 
+     margin-top: 280px;
+     /* margin-bottom: 300px; */
+}
+
+#text:after {
+     content: "|";
+     animation: blink 0.8s infinite;
+
+}
+
+#text:hover {
+     color: #36041f;
+     text-decoration: underline;
+}
+
+/*JAVASCRIPT TEXT2 */
+.container {
+     text-align: center;
+     color: #3c363b;
+}
+
+.container .text2{
+     font-size: 30px;
+}
+
+.container .auto-type {
+
+}
+
+/* FOOTER DO SITE */
+
+footer {
+     background-color: #3c363b;
+     color: #fcccd0;
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 300px;
+}
+
+footer h2 {
+     margin-top: 15px; 
+     margin-bottom: 15px;
+     color: #f5c3c8;
+     font-weight: bold;
+}
+
+footer ul {
+
+}
+
+footer ul li {
+     /* margin-left: 10px; */
+     list-style: none;
+     margin-bottom: 7px;
+     text-align: left; 
+}
+
+footer ul li a {
+     text-decoration: none;
+     color: #fcd7da;
+}
+
+footer ul li a:hover {
+     color: #b9a6a8;
+}
+
+.direitoaut {
+     border: 1px radius #fcd7da; 
+     color: #fcd7da;
+     background-color: #3c363b;
+     text-align: center;
+}
+
+
+/* MAIS SOBRE */
+
+.cachorro {
+     display: flex;
+     justify-content: center;
+}
+
+#msbtn {
+     margin-top: 10px;
+     background-color: #fcd7da;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 15px;
+     font-weight: bold;
+     border: 2px solid #f58f9a;
+}
+
+#msbtn a {
+     color: #3c363b;
+    font-style: bold;
+    list-style: none;
+    text-decoration: none;
+}
+
+#msbtn:hover {
+     background-color: #facbcf;
+}
+
+
+/* JAVASCRIPT POPUP*/
+
+.container#blur.active{
+     filter: blur(5px);
+}
+
+#popup {
+     position: fixed;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 600px;
+     padding: 50px;
+     box-shadow: 0 7px 30px rgb(0, 0, 0);
+     background-color: #3c363b;
+     visibility: hidden;
+     opacity: 0;
+     transition: 0.5s;
+     border: 5px solid #fcd7da; 
+}
+
+#popup.active {
+     top: 50%;
+     visibility: visible;
+     opacity: 1;
+     transition: 0.5s;
+}
+
+/* POPUP CADASTRO */
+
+#popup form #cadastro  {
+     color: #fcd7da;
+     
+}
+
+#popup form #cadastro input  {
+     background-color: #f3e2e8;
+     border: 2px solid #f3e2e8;
+     border-radius: 5px;
+}
+
+#popup form #cadastro input:hover  {
+     border: 1px solid #3c363b;
+     background-color: #facbcf;
+}
+
+/* POPUP LOGIN */
+
+#popup form #login  {
+     color: #fcd7da;
+     
+}
+
+#popup form #login input  {
+     background-color: #f3e2e8;
+     border: 2px solid #f3e2e8;
+     border-radius: 5px;
+}
+
+#popup form #login input:hover  {
+     border: 1px solid #cfcfcf;
+     background-color: #facbcf;
+}
+
+
+@keyframes blink {
+     0% {
+          opacity: 0;
+     }
+
+     50% {
+          opacity: 1;
+     }
+
+     100% {
+          opacity: 0;
+     }
+}
+
+/* lista */
+
+nav ul li {
+     line-height: 70px;
+     font-size: 25px;
+     font-weight: lighter;
+     list-style: none;
+}
+
+nav ul li a{
+     text-decoration: none;
+     background-color:#fcd7da;
+     padding: 10px;
+     border-radius: 10px;
+     color: #210123;
+     font-weight: bold;
+}
+
+nav ul li a:hover {
+     border: 2px solid #f9ebf2;
+}
+
+#lista ul li {
+     line-height: 70px;
+     font-size: 25px;
+     font-weight: lighter;
+}
+
+#lista ul li > a {
+     color: rgb(0, 0, 0);
+     text-decoration: none;
+     background-color: white;
+     padding: 10px;
+     border-radius: 10px;
+}
+
+/* CADASTRO E LOGIN */
+
+#popup form {
+     display: flex;
+     justify-content: space-between;
+}
+
+/* BOTAO */
+
+.btn {
+     
+     background-color: #fcd7da;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 15px;
+     font-weight: lighter;
+     border: 2px solid #f58f9a;
+}
+
+.btn a {
+     color: #3c363b;
+    font-style: bold;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+     background-color: #facbcf;
+}
+
+
+
+
+
+
+
+
+
+.icon:hover {
+    color: #ff0088;
+}

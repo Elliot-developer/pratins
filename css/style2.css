@@ -1,0 +1,266 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Homemade+Apple&family=Mrs+Sheppards&family=Open+Sans:wght@800&family=Poppins:wght@300&display=swap');
+
+* {
+     margin: 0px;
+     padding: 0px;
+
+}
+
+body {
+     background-color: #f9ebf2; 
+}
+
+header {
+     display: flex;
+     justify-content: space-around;
+     background-color:#3c363b;
+     border-bottom: 5px solid #fcd7da; 
+     width: 100%;
+}
+
+h1 {
+     color: #fcd7da;
+     font-size: 55px;
+     font-family: 'Poppins', sans-serif;
+}
+
+.text {
+     text-align: center;
+}
+
+.text .text2 {
+     font-size: 50px;
+     color: #3c363b;
+     margin-top: 50px;
+     margin-bottom: 30px;
+     text-transform: uppercase;
+
+}
+
+
+.text-sb {
+     display: flex;
+     justify-content: space-around;
+     
+}
+
+.text-sb  h2 {
+     font-size: 30px;
+     padding: 0;
+     margin: 0;
+     padding-bottom: 10px;
+     
+}
+
+.text-sb .p1 {
+     padding: 50px;
+     width: 30%;
+     height: 100%;
+     font-size: 20px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     transition: transform 2s;
+     background-color: #3c363b;
+     color: #bea0a3;
+     border-radius: 20px;
+
+}
+
+.text-sb .p1:hover {
+     background-color: #5a5159;
+     transform: scale(1.1);
+     box-shadow: 5px #3c363b;
+}
+
+
+.text-sb .p2 {
+     padding: 50px;
+     width: 30%;
+     height: 300px;
+     font-size: 20px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: #bea0a3;
+     background-color: #3c363b;
+     border-radius: 20px;
+     transition: transform 2s;
+}
+
+
+
+.text-sb .p2:hover {
+     background-color: #5a5159;
+     transform: scale(1.1);
+}
+
+footer {
+     background-color: #3c363b;
+     color: #fcccd0;
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 100px;
+}
+
+footer h2 {
+     margin-top: 15px; 
+     margin-bottom: 15px;
+     color: #f5c3c8;
+     font-weight: bold;
+}
+
+
+footer ul li {
+     /* margin-left: 10px; */
+     list-style: none;
+     margin-bottom: 7px;
+     text-align: left; 
+}
+
+footer ul li a {
+     text-decoration: none;
+     color: #fcd7da;
+}
+
+footer ul li a:hover {
+     color: #b9a6a8;
+}
+
+.direitoaut {
+     border: 1px radius #fcd7da; 
+     color: #fcd7da;
+     background-color: #3c363b;
+     text-align: center;
+}
+
+
+/* JAVASCRIPT POPUP*/
+
+.container#blur.active{
+     filter: blur(5px);
+}
+
+#popup {
+     position: fixed;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 600px;
+     padding: 50px;
+     box-shadow: 0 7px 30px rgb(0, 0, 0);
+     background-color: #3c363b;
+     visibility: hidden;
+     opacity: 0;
+     transition: 0.5s;
+     border: 5px solid #fcd7da; 
+}
+
+#popup.active {
+     top: 50%;
+     visibility: visible;
+     opacity: 1;
+     transition: 0.5s;
+}
+
+/* POPUP CADASTRO */
+
+#popup form #cadastro  {
+     color: #fcd7da;
+     
+}
+
+#popup form #cadastro input  {
+     background-color: #f3e2e8;
+     border: 2px solid #f3e2e8;
+     border-radius: 5px;
+}
+
+#popup form #cadastro input:hover  {
+     border: 1px solid #3c363b;
+     background-color: #facbcf;
+}
+
+/* POPUP LOGIN */
+
+#popup form #login  {
+     color: #fcd7da;
+     
+}
+
+#popup form #login input  {
+     background-color: #f3e2e8;
+     border: 2px solid #f3e2e8;
+     border-radius: 5px;
+}
+
+#popup form #login input:hover  {
+     border: 1px solid #cfcfcf;
+     background-color: #facbcf;
+}
+
+
+
+/* lista */
+
+nav ul li {
+     line-height: 70px;
+     font-size: 25px;
+     font-weight: lighter;
+     list-style: none;
+}
+
+nav ul li a{
+     text-decoration: none;
+     background-color:#fcd7da;
+     padding: 10px;
+     border-radius: 10px;
+     color: #210123;
+     font-weight: bold;
+}
+
+nav ul li a:hover {
+     border: 2px solid #f9ebf2;
+}
+
+#lista ul li {
+     line-height: 70px;
+     font-size: 25px;
+     font-weight: lighter;
+}
+
+#lista ul li > a {
+     color: rgb(0, 0, 0);
+     text-decoration: none;
+     background-color: white;
+     padding: 10px;
+     border-radius: 10px;
+}
+
+/* CADASTRO E LOGIN */
+
+#popup form {
+     display: flex;
+     justify-content: space-between;
+}
+
+/* BOTAO */
+
+.btn {
+     
+     background-color: #fcd7da;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 15px;
+     font-weight: lighter;
+     border: 2px solid #f58f9a;
+}
+
+.btn a {
+     color: #3c363b;
+    font-style: bold;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+     background-color: #facbcf;
+}
