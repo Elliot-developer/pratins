@@ -1,1 +1,1 @@
-#pratins-lwo9cd4gk-elliot-developer.vercel.app
+pratins-lwo9cd4gk-elliot-developer.vercel.app
